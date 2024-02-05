@@ -18,10 +18,19 @@
 </head>
 <body>
     <h1>Estudando Formulário</h1>
-    <form method="post" action="cadastro.php" autocomplete="">
-        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">SobreNome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit"></p>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusu">Usuário:</label>
+            <input type="text" name="usu" id="iusu" required minlength="4" maxlength="24" size="24" placeholder="nome do usuário" autocomplete="username">
+        </p>
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="6" size="8" placeholder="senha" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit"  value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
     </form>
 </body>
 </html>
