@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style> 
+        * {
+                font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+        body {
+            background-color: rgba(0, 255, 213, 0.849)
+        }
+        fieldset
+        {
+            background-color: rgba(128, 128, 128, 0.589);
+        }
+    </style>
+</head>
+<body>
+    <h1>Estudando Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <p>
+                <input type="file" name="perfil" id="iperfil">
+            <label for="iperfil"></label>
+        </p>
+        <input type="color" name="cor" id="icor" value="#ff00ff">
+        <label for="imas">Cores</label><br><br>
+        <input type="range" name="fav" id="ifav" min="1" max="3">
+        <label for="ifem">Nível deSatisfação</label><br>
+        </fieldset>
+
+        <p>
+            <input type="submit"  value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

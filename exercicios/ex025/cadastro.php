@@ -1,1 +1,1 @@
-prenda PHP para saber oque fazer com eles.
+Aprenda PHP para saber oque fazer com eles.
